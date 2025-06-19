@@ -1,6 +1,13 @@
 # 🌗 Style Wars: Light v.s Dark
 
-Welcome to **Style Wars: Light v.s Dark**
+---
+
+This is my submission for Style Wars organized by NJACK as a part of the Summer of Code 2.0 at IIT Patna.
+
+My faction: Light
+
+I hope you all like it :)
+
 
 ---
 
@@ -35,11 +42,6 @@ Your final web page should be **visually appealing** and **responsive** across a
     - IDs and/or class names (add or alter as needed)
 - **No paid libraries or frameworks.**  
   Only free tools are permitted.
-- Do not modify the content of the html pages. You may rearrange
-  elements as long as the content isn’t altered. You may add
-  container elements, links to your stylesheets/fonts/framework
-  CDN and can add and/or alter IDs and/or class names
-
 
 ---
 
