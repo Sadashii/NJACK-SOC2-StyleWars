@@ -3,42 +3,28 @@
 :root {
     --background-primary: #F7F3EA;
     --background-secondary: #FFFFFF;
-    --accent-1: #fc4c02;
-    --accent-2: #e21c79;
-    --accent-3: #fce5f5;
-    --accent-4: #d8ebf2;
 }
 
 * {
     margin: 0;
     padding: 0;
 }
-a, button {
+
+a,
+button {
     cursor: url('cursor_link.svg') 8 8, auto;
     font-family: "Space Grotesk", sans-serif;
     background: transparent;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Chakra Petch", sans-serif;
 }
-
-/*.button1 {*/
-/*    margin-top: 2rem;*/
-/*    border: none;*/
-/*    text-transform: uppercase;*/
-/*    transition: all 250ms ease-in-out;*/
-/*    color: var(--accent-1);*/
-/*    font-size: 1rem;*/
-
-/*    &:before {*/
-/*        content: "—";*/
-/*        margin-right: .5rem;*/
-/*    }*/
-
-/*    &:hover {*/
-/*        margin-left: .75rem;*/
-/*    }*/
-/*}*/
 
 .button1 {
     margin-top: 2rem;
@@ -54,7 +40,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        background-color: #F3C9D0; /* brighter, pinker */
+        background-color: #F3C9D0;
+        /* brighter, pinker */
         transform: translateY(-3px);
         box-shadow: 6px 8px 0px #d6caca;
     }
@@ -81,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
     scroll-behavior: smooth;
-    /*scroll-snap-type: y mandatory;*/
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -120,6 +107,7 @@ nav {
             span:first-child {
                 margin-left: -.75rem;
             }
+
             span:last-child {
                 margin-left: .75rem;
             }
@@ -145,12 +133,12 @@ nav {
 
 
                 &::after {
-                    display:block;
+                    display: block;
                     content: '';
                     border-bottom: solid 3px #000;
                     transform: scaleX(0);
                     transition: transform 250ms ease-in-out;
-                    transform-origin:100% 50%
+                    transform-origin: 100% 50%
                 }
 
                 &:hover {
@@ -158,7 +146,7 @@ nav {
 
                     &::after {
                         transform: scaleX(1);
-                        transform-origin:0 50%;
+                        transform-origin: 0 50%;
                     }
                 }
             }
@@ -180,10 +168,9 @@ section {
         left: 0;
         content: "";
         height: 1rem;
-        background: linear-gradient(170deg, var(--accent-3) 0%, var(--accent-4) 100%);
+        background: linear-gradient(170deg, #fce5f5 0%, #d8ebf2 100%);
     }
 }
-
 
 .landing {
     display: flex;
@@ -207,15 +194,16 @@ section {
                 font-weight: 600;
                 margin-bottom: 1rem;
             }
+
             p {
                 color: #444;
                 font-size: 1rem;
             }
-            button {
 
-            }
+            button {}
 
         }
+
         .landing-graphic {
             width: 40%;
             min-width: 20vw;
@@ -281,11 +269,85 @@ section {
 }
 
 .about-us {
+    .view-content {
+        max-width: 800px;
 
+        h3 {
+            font-weight: 700;
+            margin-top: 24px;
+        }
+
+        p {
+            margin: 16px 0;
+            line-height: 1.6;
+        }
+    }
 }
 
 .virtues {
+    .view-content {
+        display: flex;
+        gap: 3rem;
 
+        .virtue {
+            text-align: center;
+            height: fit-content;
+            padding: 1rem 1rem 2rem;
+            box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.15);
+
+            h3 {
+                font-size: 1.5rem;
+                text-decoration: underline;
+            }
+
+            h4 {
+                margin-top: 1rem;
+            }
+
+            p {}
+
+            button {}
+        }
+
+
+        .virtue1 {
+            background-color: #DBFBD7;
+
+            &::after {
+                background-color: #DBFBD7;
+            }
+
+            &:hover::after {
+                background-color: #DBFBD7;
+            }
+
+            button {}
+        }
+
+        .virtue2 {
+            background-color: #DDF3FA;
+
+            &::after {
+                background-color: #DDF3FA;
+            }
+
+            &:hover::after {
+                background-color: #DDF3FA;
+            }
+        }
+
+        .virtue3 {
+            background-color: #D7DFFB;
+
+            &::after {
+                background-color: #D7DFFB;
+            }
+
+            &:hover::after {
+                background-color: #D7DFFB;
+            }
+        }
+    }
 }
 
 .cta {
@@ -302,11 +364,14 @@ section {
 
         h2 {
             font-size: 3rem;
+            margin-bottom: 1rem;
         }
+
         p {
             font-size: 1rem;
         }
     }
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -318,11 +383,11 @@ section {
             width: 25%;
             padding: 2rem 2rem;
             position: relative;
-            box-shadow: 0 0 2px 1px rgba(0,0,0,0.15);
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
             transition: all 250ms ease-in-out;
 
             &::after {
-                box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.15);
+                box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.15);
                 position: absolute;
                 content: " ";
                 width: 100%;
@@ -335,7 +400,8 @@ section {
 
             &:hover {
                 transform: translateY(-.5rem);
-                box-shadow: 0 0 3px 3px rgba(0,0,0,0.15);
+                box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+
                 &::after {
                     left: 0;
                     top: 0;
@@ -346,23 +412,41 @@ section {
 
         .pro1 {
             background-color: #EBDEE0;
+
             &::after {
                 background-color: #EBDEE0;
             }
+
+            &:hover::after {
+                background-color: #f1ced3;
+            }
         }
+
         .pro2 {
             background-color: #F8E7DA;
+
             &::after {
                 background-color: #F8E7DA;
             }
+
+            &:hover::after {
+                background-color: #f3d9c6;
+            }
         }
+
         .pro3 {
             background-color: #E1E6D9;
+
             &::after {
                 background-color: #E1E6D9;
             }
+
+            &:hover::after {
+                background-color: #d8e3c7;
+            }
         }
     }
+
     .action-buttons {
         display: flex;
         gap: 4rem;
@@ -371,13 +455,111 @@ section {
 
 footer {
     scroll-snap-align: start;
-    height: 15rem;
+    padding: 2rem;
+    text-align: center;
 }
+
+footer {
+    background-color: #f7f4f0;
+    color: #1c1c1c;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 32px 16px;
+    position: relative;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin: 4px 0;
+        font-size: 0.95rem;
+    }
+
+    a {
+        color: #e7739e;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 
 ::-webkit-scrollbar {
     display: none;
 }
+
 body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+@media screen and (max-width: 768px) {
+    .landing {
+        padding: 0 2rem;
+
+        .landing-main {
+
+            .landing-content {
+                width: 100%;
+                text-align: center;
+            }
+
+            .landing-graphic {
+                display: none;
+            }
+        }
+    }
+
+
+    .view {
+        padding: 2rem 1rem;
+
+        .view-content {
+            padding-left: 1rem;
+        }
+    }
+
+    .virtues {
+        .view-content {
+            flex-direction: column;
+        }
+    }
+
+    .cta {
+        padding: 2rem 1rem;
+
+        .title {
+            width: 100%;
+        }
+
+        ul {
+            flex-direction: column;
+            padding: 0;
+
+            li {
+                width: calc(100% - 4.5rem) !important;
+            }
+        }
+
+        .action-buttons {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        ul {
+            display: none;
+        }
+    }
 }
