@@ -261,6 +261,9 @@ section {
         text-align: right;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
+        position: sticky;
+        top: 3rem;
+        height: fit-content;
     }
 
     .view-content {
@@ -501,7 +504,11 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)    {
+    html {
+        scroll-snap-type: none !important;
+    }
+
     .landing {
         padding: 0 2rem;
 
@@ -517,7 +524,6 @@ body {
             }
         }
     }
-
 
     .view {
         padding: 2rem 1rem;
