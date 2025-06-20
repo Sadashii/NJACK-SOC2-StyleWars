@@ -1,81 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Offside&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-:root {
-    --background-primary: #F7F3EA;
-    --background-secondary: #FFFFFF;
-}
-
+/* A little CSS Reset*/
 * {
     margin: 0;
     padding: 0;
 }
-
-a,
-button {
+a, button {
     cursor: url('cursor_link.svg') 8 8, auto;
     font-family: "Space Grotesk", sans-serif;
     background: transparent;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Chakra Petch", sans-serif;
 }
 
+/* Custom button styles */
 .button1 {
     margin-top: 2rem;
     list-style: none;
     padding: 1rem 2rem;
     position: relative;
     border: none;
-    background-color: #EBDEE0;
+    background-color: #c2f9bb;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
-    box-shadow: 4px 6px 0px #d6caca;
+    box-shadow: 4px 6px 0 #d6caca;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        background-color: #F3C9D0;
-        /* brighter, pinker */
+        background-color: #9de494;
         transform: translateY(-3px);
-        box-shadow: 6px 8px 0px #d6caca;
+        box-shadow: 6px 8px 0 #d6caca;
     }
 
     &:active {
         transform: translateY(1px);
-        box-shadow: 2px 3px 0px #c9baba;
+        box-shadow: 2px 3px 0 #c9baba;
     }
 }
-
 .button2 {
-    border: 1px solid black;
+    border: 2px solid #cc3363;
     padding: .5rem 2rem;
-    transition: background-color 500ms linear;
+    transition: background-color 400ms linear;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1rem;
 
     &:hover {
-        background-color: black;
+        background-color: #cc3363;
         color: white;
     }
 }
 
+/* Main Styles*/
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
-
 body {
     cursor: url('cursor_default.svg') 8 8, auto;
     font-family: "Space Grotesk", sans-serif;
-    background-color: var(--background-primary);
-    overflow-x: hidden !important;
+    background-color: #F7F3EA;
 }
 
 nav {
@@ -88,7 +74,7 @@ nav {
     padding: 1.5rem 2rem;
     z-index: 100;
     font-family: "Offside", sans-serif !important;
-    background-color: var(--background-secondary);
+    background-color: #FFFFFF;
 
     div {
         display: flex;
@@ -96,9 +82,23 @@ nav {
         font-size: 2rem;
         font-weight: bolder;
 
+        .i {
+            display: flex;
+            color: transparent;
+
+            &::after {
+                content: '💡';
+                color: #1c1c1c;
+                display: block;
+                margin-right: -.6rem;
+                margin-left: -1.35rem;
+            }
+        }
         span {
             line-height: 1;
             transition: all 250ms linear;
+            display: flex;
+            flex-direction: row;
         }
 
         &:hover {
@@ -125,7 +125,7 @@ nav {
             a {
                 display: flex;
                 flex-direction: column;
-                color: black;
+                color: #1c1c1c;
                 text-decoration: none;
                 transition-duration: 300ms;
                 border-radius: .25rem;
@@ -168,7 +168,7 @@ section {
         left: 0;
         content: "";
         height: 1rem;
-        background: linear-gradient(170deg, #fce5f5 0%, #d8ebf2 100%);
+        background: linear-gradient(170deg, #E9E1F8 0%, #DFF2E1 100%);
     }
 }
 
@@ -191,17 +191,18 @@ section {
 
             h1 {
                 font-size: 3rem;
-                font-weight: 600;
+                font-weight: 700;
                 margin-bottom: 1rem;
+
+                text {
+                    color: #cc3363;
+                }
             }
 
             p {
                 color: #444;
                 font-size: 1rem;
             }
-
-            button {}
-
         }
 
         .landing-graphic {
@@ -228,7 +229,7 @@ section {
         position: absolute;
         bottom: 1rem;
         width: 100vw;
-        color: black;
+        color: #1c1c1c;
 
         &::after {
             border: solid;
@@ -245,7 +246,7 @@ section {
             &::after {
                 margin-top: .75rem;
                 transform: rotate(45deg) translateX(-.75rem) translateY(-.75rem);
-                border-color: black;
+                border-color: #1c1c1c;
                 width: 1.25rem;
                 height: 1.25rem;
             }
@@ -270,7 +271,6 @@ section {
         padding-left: 3rem;
     }
 }
-
 .about-us {
     .view-content {
         max-width: 800px;
@@ -286,7 +286,6 @@ section {
         }
     }
 }
-
 .virtues {
     .view-content {
         display: flex;
@@ -296,58 +295,55 @@ section {
             text-align: center;
             height: fit-content;
             padding: 1rem 1rem 2rem;
-            box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 1rem;
 
             h3 {
                 font-size: 1.5rem;
                 text-decoration: underline;
+
+                &::after {
+                    content: " ";
+                    height: 10rem;
+                    display: block;
+
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
             }
 
             h4 {
                 margin-top: 1rem;
             }
 
-            p {}
+            p {
+                opacity: .8;
+            }
 
             button {}
         }
 
-
         .virtue1 {
-            background-color: #DBFBD7;
+            background-color: #E9E1F8;
 
-            &::after {
-                background-color: #DBFBD7;
+            h3::after {
+                background-image: url("clarity.png");
             }
-
-            &:hover::after {
-                background-color: #DBFBD7;
-            }
-
-            button {}
         }
 
         .virtue2 {
-            background-color: #DDF3FA;
+            background-color: #FDE9DF;
 
-            &::after {
-                background-color: #DDF3FA;
-            }
-
-            &:hover::after {
-                background-color: #DDF3FA;
+            h3::after {
+                background-image: url("openness.png");
             }
         }
 
         .virtue3 {
-            background-color: #D7DFFB;
+            background-color: #DFF2E1;
 
-            &::after {
-                background-color: #D7DFFB;
-            }
-
-            &:hover::after {
-                background-color: #D7DFFB;
+            h3::after {
+                background-image: url("energy.png");
             }
         }
     }
@@ -456,18 +452,13 @@ section {
     }
 }
 
-footer {
-    scroll-snap-align: start;
-    padding: 2rem;
-    text-align: center;
-}
 
 footer {
-    background-color: #f7f4f0;
+    scroll-snap-align: start;
     color: #1c1c1c;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    padding: 32px 16px;
+    padding: 2rem 1rem;
     position: relative;
 
     h3 {
@@ -482,7 +473,7 @@ footer {
     }
 
     a {
-        color: #e7739e;
+        color: #cc3363;
         text-decoration: none;
 
         &:hover {
@@ -492,10 +483,10 @@ footer {
 }
 
 
+/* Hide the scrollbar */
 ::-webkit-scrollbar {
     display: none;
 }
-
 body {
     -ms-overflow-style: none;
     /* IE and Edge */
@@ -503,7 +494,7 @@ body {
     /* Firefox */
 }
 
-
+/* Responsive Styles */
 @media screen and (max-width: 768px)    {
     html {
         scroll-snap-type: none !important;
@@ -561,7 +552,6 @@ body {
         }
     }
 }
-
 @media screen and (max-width: 550px) {
     nav {
         ul {
