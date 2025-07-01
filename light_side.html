@@ -14,8 +14,30 @@
     <!-- Include any styling libraries you wish here-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> </meta>
     <link rel="stylesheet" href="./light_side.css"> </link>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll("button, a").forEach(el => {
+                el.addEventListener("click", e => {
+                    e.preventDefault();
+                    alert("Buttons are disabled as per NJACK Style Wars rules (CSS-only submission).");
+                });
+            });
+        });
+    </script>
+
+
 </head>
 <body>
+
+<div class="alert" onclick="this.style.opacity = 0">
+    ⚠️ <strong>Heads up!</strong><br>
+    This is my submission for the <strong>NJACK Style Wars</strong> Competition.<br>
+    As per the rules, this is a <strong>CSS-only challenge</strong> — we were required to style the page without modifying any content or adding functionality.<br>
+    That’s why the buttons and links are intentionally non-functional.
+    <br><br>Click to hide
+</div>
+
 <!-- Navbar -->
 <nav>
     <div>
@@ -40,13 +62,13 @@
         </div>
         <div class="landing-graphic"></div>
     </div>
-    <button class="landing-learn-more">
+    <a href="#about" class="landing-learn-more">
         Learn More
-    </button>
+    </a>
 </section>
 
 <!-- About Section -->
-<section class="view about-us">
+<section id="about" class="view about-us">
     <h2>About the Light Side</h2>
     <div class="view-content">
         <p>
