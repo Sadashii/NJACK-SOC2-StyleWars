@@ -12,8 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     -->
     <!-- Include any styling libraries you wish here-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> </meta>
-    <link rel="stylesheet" href="./light_side.css"> </link>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./light_side.css" rel="stylesheet">
+    <link href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>"
+          rel="icon">
 
     <script>
         window.addEventListener('DOMContentLoaded', () => {
@@ -30,12 +32,13 @@
 </head>
 <body>
 
-<div class="alert" onclick="this.style.opacity = 0">
-    ⚠️ <strong>Heads up!</strong><br>
+<div class="alert" onclick="this.style.opacity = 0; this.style.display = 'none'">
+    ⚠️ <strong>Heads up!</strong><br><br>
     This is my submission for the <strong>NJACK Style Wars</strong> Competition.<br>
-    As per the rules, this is a <strong>CSS-only challenge</strong> — we were required to style the page without modifying any content or adding functionality.<br>
-    That’s why the buttons and links are intentionally non-functional.
-    <br><br>Click to hide
+    As per the rules, this is a <strong>CSS-only challenge</strong> — we were required to style the page without
+    modifying any content or adding functionality.<br>
+    That’s why the buttons and links are intentionally non-functional. PS: I came second 🥳
+    <br><br><b>Click to hide</b>
 </div>
 
 <!-- Navbar -->
@@ -56,36 +59,46 @@
 <section class="landing">
     <div class="landing-main">
         <div class="landing-content">
-            <h1>Welcome to the <br/><text>Light Side</text></h1>
-            <p>Illuminate your web journey with clarity and openness. Join a community that believes in bright, accessible, and uplifting design.</p>
+            <h1>Welcome to the <br/>
+                <text>Light Side</text>
+            </h1>
+            <p>Illuminate your web journey with clarity and openness. Join a community that believes in bright,
+                accessible, and uplifting design.</p>
             <button class="button1">Join the Light</button>
         </div>
         <div class="landing-graphic"></div>
     </div>
-    <a href="#about" class="landing-learn-more">
+    <a class="landing-learn-more" href="#about">
         Learn More
     </a>
 </section>
 
 <!-- About Section -->
-<section id="about" class="view about-us">
+<section class="view about-us" id="about">
     <h2>About the Light Side</h2>
     <div class="view-content">
         <p>
-            The Light Side is dedicated to crafting digital experiences that are clear, inviting, and energizing. Our members value transparency, readability, and a sense of space in every design.
+            The Light Side is dedicated to crafting digital experiences that are clear, inviting, and energizing. Our
+            members value transparency, readability, and a sense of space in every design.
         </p>
         <p>
-            We encourage thoughtful layouts, accessible color palettes, and designs that make every visitor feel welcome. From the earliest days of the web, advocates of the Light Side have championed simplicity and openness, believing that information should be easy to find and understand.
+            We encourage thoughtful layouts, accessible color palettes, and designs that make every visitor feel
+            welcome. From the earliest days of the web, advocates of the Light Side have championed simplicity and
+            openness, believing that information should be easy to find and understand.
         </p>
         <p>
-            Our philosophy is rooted in the idea that less is more. By minimizing distractions and focusing on what truly matters, we create digital spaces that foster learning, connection, and creativity.
+            Our philosophy is rooted in the idea that less is more. By minimizing distractions and focusing on what
+            truly matters, we create digital spaces that foster learning, connection, and creativity.
         </p>
         <h3>Our Mission</h3>
         <p>
-            We strive to set new standards for web accessibility and user experience. Through workshops, collaborative projects, and open discussions, we empower designers and developers to build sites that shine—regardless of device or ability.
+            We strive to set new standards for web accessibility and user experience. Through workshops, collaborative
+            projects, and open discussions, we empower designers and developers to build sites that shine—regardless of
+            device or ability.
         </p>
         <p>
-            The Light Side welcomes everyone, from beginners to experts, to join our movement and help shape a web that is bright, open, and inspiring.
+            The Light Side welcomes everyone, from beginners to experts, to join our movement and help shape a web that
+            is bright, open, and inspiring.
         </p>
     </div>
 </section>
@@ -95,48 +108,62 @@
     <h2>Our Virtues</h2>
     <div class="view-content">
         <div class="virtue virtue1">
-                <h3>Clarity</h3>
-                <h4>Simple and Intuitive</h4>
-                <p>
-                    Every element is placed with purpose. We minimize clutter and use whitespace to guide the eye, ensuring users can focus on what matters most. Navigation menus are straightforward, and content is structured logically to reduce cognitive load.
-                </p>
-                <h4>Readable Typography</h4>
-                <p>
-                    Fonts are chosen for legibility and comfort. Headings stand out, and body text is easy to scan and understand. We pay close attention to line height, font size, and contrast, making sure that every word is a pleasure to read.
-                </p>
-                <p>
-                    Clarity also means clear calls to action. Buttons are distinct, and links are descriptive, guiding users effortlessly through the site.
-                </p>
+            <h3>Clarity</h3>
+            <h4>Simple and Intuitive</h4>
+            <p>
+                Every element is placed with purpose. We minimize clutter and use whitespace to guide the eye, ensuring
+                users can focus on what matters most. Navigation menus are straightforward, and content is structured
+                logically to reduce cognitive load.
+            </p>
+            <h4>Readable Typography</h4>
+            <p>
+                Fonts are chosen for legibility and comfort. Headings stand out, and body text is easy to scan and
+                understand. We pay close attention to line height, font size, and contrast, making sure that every word
+                is a pleasure to read.
+            </p>
+            <p>
+                Clarity also means clear calls to action. Buttons are distinct, and links are descriptive, guiding users
+                effortlessly through the site.
+            </p>
             <button class="button1">Explore Clarity</button>
         </div>
         <div class="virtue virtue2">
-                <h3>Openness</h3>
-                <h4>Welcoming Layouts</h4>
-                <p>
-                    Our pages invite exploration, with open navigation and clear calls to action. We avoid barriers, making information accessible to all. Whether you’re browsing on a phone, tablet, or desktop, our layouts adapt to your needs.
-                </p>
-                <h4>Inclusive Design</h4>
-                <p>
-                    Accessibility is a priority. We use high-contrast colors, descriptive links, and ensure our sites work for everyone. Our designs are tested with screen readers and keyboard navigation to guarantee universal usability.
-                </p>
-                <p>
-                    Openness also means sharing knowledge. We publish guides, host Q&A sessions, and encourage members to contribute resources for the benefit of the whole community.
-                </p>
+            <h3>Openness</h3>
+            <h4>Welcoming Layouts</h4>
+            <p>
+                Our pages invite exploration, with open navigation and clear calls to action. We avoid barriers, making
+                information accessible to all. Whether you’re browsing on a phone, tablet, or desktop, our layouts adapt
+                to your needs.
+            </p>
+            <h4>Inclusive Design</h4>
+            <p>
+                Accessibility is a priority. We use high-contrast colors, descriptive links, and ensure our sites work
+                for everyone. Our designs are tested with screen readers and keyboard navigation to guarantee universal
+                usability.
+            </p>
+            <p>
+                Openness also means sharing knowledge. We publish guides, host Q&A sessions, and encourage members to
+                contribute resources for the benefit of the whole community.
+            </p>
             <button class="button1">Discover Openness</button>
         </div>
         <div class="virtue virtue3">
-                <h3>Energy</h3>
-                <h4>Vibrant Visuals</h4>
-                <p>
-                    Bright accents and uplifting imagery keep users engaged and motivated. We use color to create a positive, energetic atmosphere. Visual cues such as icons, highlights, and banners help direct attention and add personality to our designs.
-                </p>
-                <h4>Interactive Experiences</h4>
-                <p>
-                    Subtle animations and responsive feedback make every interaction enjoyable and intuitive. Hover effects, transitions, and micro-interactions bring the interface to life without overwhelming the user.
-                </p>
-                <p>
-                    Energy is about momentum. We encourage users to participate, share feedback, and become a part of the Light Side’s ongoing story.
-                </p>
+            <h3>Energy</h3>
+            <h4>Vibrant Visuals</h4>
+            <p>
+                Bright accents and uplifting imagery keep users engaged and motivated. We use color to create a
+                positive, energetic atmosphere. Visual cues such as icons, highlights, and banners help direct attention
+                and add personality to our designs.
+            </p>
+            <h4>Interactive Experiences</h4>
+            <p>
+                Subtle animations and responsive feedback make every interaction enjoyable and intuitive. Hover effects,
+                transitions, and micro-interactions bring the interface to life without overwhelming the user.
+            </p>
+            <p>
+                Energy is about momentum. We encourage users to participate, share feedback, and become a part of the
+                Light Side’s ongoing story.
+            </p>
             <button class="button1">Get Inspired</button>
         </div>
     </div>
@@ -147,7 +174,8 @@
     <div class="title">
         <h2>Ready to Shine?</h2>
         <p>
-            Become a part of the Light Side and help us set new standards for web design excellence. Sign up to receive updates, participate in our next workshop, or contribute your own ideas to our growing community.
+            Become a part of the Light Side and help us set new standards for web design excellence. Sign up to receive
+            updates, participate in our next workshop, or contribute your own ideas to our growing community.
         </p>
     </div>
     <ul>
